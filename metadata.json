@@ -1,0 +1,9 @@
+{
+  "name": "Copy of Logam Industri ART - Profil Bisnis Kerajinan Tembaga",
+  "description": "Website profil bisnis eksklusif untuk kerajinan tembaga dengan desain glassmorphism, aksen emas, dan asisten AI Gemini.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": []
+} PT p
