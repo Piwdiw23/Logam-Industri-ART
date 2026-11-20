@@ -3,7 +3,8 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig(() => {
-    return {base: '/Logam-Industri-ART/',
+    return {
+      base: '/Logam-Industri-ART/',
       server: {
         port: 3000,
         host: '0.0.0.0',
