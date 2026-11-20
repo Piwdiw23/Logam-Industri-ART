@@ -1,0 +1,33 @@
+
+/* Hamburger Animation Logic */
+.hamburger-line {
+    transition: all var(--transition-speed) cubic-bezier(0.19, 1, 0.22, 1);
+    will-change: transform, opacity;
+}
+
+.nav-open .line-1 { 
+    transform: translateY(7px) rotate(45deg); 
+    width: 24px; 
+}
+
+.nav-open .line-2 { 
+    opacity: 0; 
+    transform: translateX(-10px); 
+}
+
+.nav-open .line-3 { 
+    transform: translateY(-7px) rotate(-45deg); 
+    width: 24px; 
+}
+
+/* Mobile Menu Stagger Effects */
+.mobile-menu-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.nav-active .mobile-menu-item {
+    opacity: 1;
+    transform: translateY(0);
+}

@@ -1,0 +1,52 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-copper: #B87333;
+  --brand-gold: #C5A059;
+  --brand-obsidian: #0A0A0A;
+  --brand-bone: #FDFDFD;
+  --glass-border: rgba(184, 115, 51, 0.15);
+}
+
+@layer components {
+  /* Glassmorphism Presets */
+  .glass-light {
+    @apply backdrop-blur-xl bg-white/70 border border-[var(--glass-border)] shadow-xl;
+  }
+  
+  .glass-dark {
+    @apply backdrop-blur-2xl bg-brand-obsidian/85 border border-white/10 shadow-2xl;
+  }
+
+  .glass-luxury {
+    @apply backdrop-blur-3xl bg-white/40 border border-white/20 shadow-2xl;
+  }
+
+  /* Typography & Effects */
+  .text-luxury-gradient {
+    @apply bg-gradient-to-br from-brand-copper via-brand-gold to-brand-copper bg-clip-text text-transparent;
+  }
+
+  .luxury-button {
+    @apply px-10 py-4 rounded-full font-black text-[10px] uppercase tracking-[0.3em] transition-all duration-500 shadow-lg active:scale-95 flex items-center justify-center gap-3;
+  }
+
+  .reveal-on-scroll {
+    @apply opacity-0 translate-y-8 transition-all duration-1000 ease-out;
+  }
+  
+  .reveal-active {
+    @apply opacity-100 translate-y-0;
+  }
+}
+
+body {
+  @apply bg-brand-bone text-brand-obsidian antialiased selection:bg-brand-copper selection:text-white overflow-x-hidden;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { @apply bg-transparent; }
+::-webkit-scrollbar-thumb { @apply bg-brand-copper/30 rounded-full hover:bg-brand-copper transition-colors; }

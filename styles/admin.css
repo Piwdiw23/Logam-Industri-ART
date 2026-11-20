@@ -1,0 +1,23 @@
+
+.admin-sidebar-scroll::-webkit-scrollbar {
+  width: 2px;
+}
+.admin-sidebar-scroll::-webkit-scrollbar-thumb {
+  background: rgba(197, 160, 89, 0.1);
+}
+
+.dashboard-card {
+  @apply bg-white p-8 rounded-[2.5rem] border border-black/[0.03] shadow-sm hover:shadow-xl transition-all duration-500;
+}
+
+.admin-input {
+  @apply w-full p-4 bg-gray-50 border-none rounded-2xl text-sm font-bold shadow-inner focus:ring-1 focus:ring-brand-copper transition-all;
+}
+
+.admin-table-header {
+  @apply p-6 text-[9px] font-black uppercase text-gray-400 tracking-widest;
+}
+
+.admin-table-cell {
+  @apply p-6 text-sm text-brand-obsidian border-b border-gray-50;
+}
